@@ -73,7 +73,7 @@ if __name__ == "__main__":
     plt.ylabel("Execution Time (s)")
     plt.title("Execution Time vs Core Count")
     plt.grid()
-    plt.savefig('execution_time.png', dpi=400, bbox_inches='tight')
+    plt.savefig('plots/execution_time.png', dpi=400, bbox_inches='tight')
  
     # speedup plot
     plt.figure(figsize=(8,5))
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     plt.title("Speedup vs Core Count")
     plt.legend()
     plt.grid()
-    plt.savefig('speedup.png', dpi=400, bbox_inches='tight')
+    plt.savefig('plots/speedup.png', dpi=400, bbox_inches='tight')
 
     
 
@@ -95,5 +95,5 @@ if __name__ == "__main__":
     plt.ylabel("Efficiency")
     plt.title("Efficiency vs Core Count")
     plt.grid()
-    plt.savefig('efficiency.png', dpi=400, bbox_inches='tight')
+    plt.savefig('plots/efficiency.png', dpi=400, bbox_inches='tight')
  
