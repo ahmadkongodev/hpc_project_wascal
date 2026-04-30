@@ -10,7 +10,7 @@ from multiprocessing import Pool
 # ==============================
 # Create output folder
 # ==============================
-output_dir = "./plots"
+output_dir = "./plots/multiprocessing"
 
     
 # ──────────────────────────────────────────────
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     extreme_by_year = extreme_events.groupby('year').size().reset_index(name='extreme_event_count')
 
     print(f"95th-pct threshold: {threshold_95:.4f} mm")
-    print(f"Extreme events: {len(extreme_events):,} ({len(extreme_events)/len(full_data)*100:.2f}%)")
+    print(f"Extreme events: {len(extreme_events):,} ({len(extreme_events)/len(full_data)*100:.2f}% of total data)")
     print(extreme_by_year.to_string(index=False))
 
 
